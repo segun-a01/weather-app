@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="weather.css">
+    <title>Weather-forecast</title>
+</head>
+
+<body>
+
+    <section class="navbar">
+        <div class="nav-links">
+            <a href="#" class="nav-item active">Home</a>
+            <a href="#" class="nav-item">About</a>
+        </div>
+
+        <div id="search-container">
+            <input type="text" placeholder="Type City, Zip Code" class="search_input">
+            <button id="search_btn">
+                <span class="icon-glass"></span>
+            </button>
+
+        </div>
+    </section>
+
+    <section id="hero">
+        <div class="parent">
+            <div class="des">
+                <i class="bi bi-geo-alt-fill"></i>
+                <h3 id="city">Delhi,</h3>
+
+                <h3 class="country">IN</h3>
+            </div>
+            <div class="both">
+
+                <div id="temp">
+                    <h1>22</h1>
+                </div>
+                <div class="deg">
+                    <sup class="sup">0</sup>
+                </div>
+                <div class="word">
+                    <h3 class="span">c</h3>
+                </div>
+            </div>
+
+
+            <div class="degree">
+                <div id="cloudy">
+                    <h3 id="city">Cloudy</h3>
+                </div>
+                <div>
+                    <img src="sun_could-removebg-preview.png" alt="weather" id="icon">
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div>
+                    <i class="bi bi-umbrella-fill"></i>
+                    <h4 id="degPer">30%</h4>
+                    <p>precipitation</p>
+                </div>
+                <div>
+                    <i class="bi bi-thermometer-sun"></i>
+                    <h4 id="degHum">30%</h4>
+                    <p>Humidity</p>
+                </div>
+                <div>
+                    <i class="bi bi-wind"></i>
+                    <h4 id="degKm">3km/h</h4>
+                    <p>Wind-speed</p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <script src="weather.js"></script>
+
+</body>
+
+</html>
